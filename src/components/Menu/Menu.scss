@@ -1,0 +1,75 @@
+@use 'src/styles/_vars';
+
+.menu{
+ 
+
+
+  &__nav{
+    position: relative;
+    z-index: 50;
+    text-transform: uppercase;
+    width: 20%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: vars.$font_title;
+    font-variant: small-caps;
+    text-decoration: underline;
+  }
+ 
+  &__list{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15em;
+  }
+
+  &__listItem{
+    font-size: 2em;
+    text-decoration: underline;
+    padding:1em;
+    font-family: vars.$font_title;
+
+  }
+}
+
+.show{
+  z-index: 10;
+  position: absolute;
+  height: 100vh;
+  background-color: rgb(219, 02, 73);
+  width: 71%!important;
+  right: -1%!important;
+  top: 0;
+  padding-left: 2em;
+
+}
+
+
+.open{
+  display: block;
+}
+
+button{
+  background-color: unset;
+  border: none;
+  font-family: vars.$font_title;
+    font-variant: small-caps;
+    text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.button_Image{
+  margin-top: 15%;
+}
+
+.menu_block{
+ transition: 1s cubic-bezier(0.4, 0, 1, 1);
+ position: absolute;
+ right: -70%;
+ width: 70%;
+ height: 100vh;
+ top:0;
+}
