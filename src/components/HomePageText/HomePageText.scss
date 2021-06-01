@@ -1,0 +1,40 @@
+@use 'src/styles/_vars';
+
+.homePageText{
+  height: 100vh;
+  background-color: rgb(52, 139, 189);
+  width: 65%;
+
+}
+
+#firstLines,#welcome{
+  position: relative;
+  font-size: 1.5em;
+  padding: .5em .5em .5em 1em;
+  line-height: 1.25em;
+}
+
+#firstLines{
+  top: 15%; 
+}
+
+#welcome{
+  top: 20%;
+}
+
+#name{
+  color: red;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: vars.$font-title;
+}
+
+#buttonProjects{
+  color: #000;
+  background-color: #ffebcd;
+  width: 80%;
+  margin: auto;
+  margin-top: 10em;
+  display: block;
+}
+

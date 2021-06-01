@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 // == Import
 import Menu from 'src/components/Menu';
@@ -12,7 +13,8 @@ const Nav = () => {
   return(
   <div className="nav">
     <div className="nav__logo">
-      <img src={logo} alt='Logo' />
+    <NavLink to="/"><img src={logo} alt='Logo' /></NavLink> 
+      
     </div>
     <Menu />
 </div>

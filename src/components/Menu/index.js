@@ -1,6 +1,7 @@
 // == Import npm
 import React, { useState } from 'react';
 import Rotate from 'react-reveal/Rotate';
+import { NavLink } from 'react-router-dom';
 
 // == Import
 
@@ -14,25 +15,16 @@ const Menu = () => {
   function openMenu(){ 
     setShow(!show);
     let menu = document.querySelector(".menu_block");
-    let button_Menu = document.querySelector(".button_Menu");
-    let button_Image = document.querySelector(".button_Image");
-    if(menu.classList.contains("show"))
+   
+    if(menu.id === "show")
     {
-      menu.classList.remove("show");
+      menu.id = "";
      
-    /*  button_Menu.classList.remove("open");
-      button_Image.classList.remove("close");
-      button_Menu.classList.add("close");
-      button_Image.classList.add("open");
-    */
+   
     }
     else{
-      menu.classList.add("show");
-    /*  button_Menu.classList.remove("close");
-      button_Image.classList.remove("open");
-      button_Menu.classList.add("open");
-      button_Image.classList.add("close");
-    */
+      menu.id = "show";
+   
     }
    
   }
@@ -43,13 +35,13 @@ const Menu = () => {
     </nav>
     
    
-    <div className="menu_block close">
+    <div className="menu_block">
       <ul className="menu__list">
         <li className="menu__listItem">
-          Portfolio
+        <NavLink to="/portfolio" onClick={openMenu}>Portfolio</NavLink> 
         </li>
         <li className="menu__listItem">
-          Voir mon CV
+        <NavLink to="/mon-CV" onClick={openMenu}>Voir mon CV</NavLink> 
         </li>
       </ul>
     </div>

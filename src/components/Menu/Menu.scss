@@ -29,21 +29,23 @@
   &__listItem{
     font-size: 2em;
     text-decoration: underline;
-    padding:1em;
+    padding-bottom: 1em;
     font-family: vars.$font_title;
 
   }
 }
 
-.show{
+#show{
   z-index: 10;
   position: absolute;
   height: 100vh;
   background-color: rgb(219, 02, 73);
-  width: 71%!important;
-  right: -1%!important;
+  width: 50%!important;
+  right: 0%!important;
   top: 0;
   padding-left: 2em;
+  /*display: block;*/
+  overflow: unset;
 
 }
 
@@ -68,8 +70,10 @@ button{
 .menu_block{
  transition: 1s cubic-bezier(0.4, 0, 1, 1);
  position: absolute;
- right: -70%;
- width: 70%;
+ right: -50%;
+ width: 50%;
  height: 100vh;
  top:0;
+ /*display: none;*/
+ overflow: hidden;
 }
