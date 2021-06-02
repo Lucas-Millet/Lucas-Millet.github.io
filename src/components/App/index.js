@@ -10,6 +10,8 @@ import './styles.scss';
 import Nav from 'src/components/Nav';
 import Menu from 'src/components/Menu';
 import HomePageContent from 'src/components/HomePageContent';
+import PortfolioContent from 'src/components/PortfolioContent';
+import CVContent from 'src/components/CVContent';
 
 // == Composant
 const App = () => (
@@ -21,12 +23,12 @@ const App = () => (
         
       </Route>
       <Route path="/mon-CV" exact>
-        <h1>MON CV</h1>
+        <CVContent />
       </Route>
       <Route path="/portfolio" exact>
-        <h1>Portfolio</h1>
+        <PortfolioContent />
       </Route>
-      <Route path="/portfolio/">
+      <Route path="/portfolio/:name">
         <h1>Un projet</h1>
       </Route>
     </Switch>
