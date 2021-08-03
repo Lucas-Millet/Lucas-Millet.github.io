@@ -1,5 +1,5 @@
 // == Import npm
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Route, Switch, useLocation, useHistory,
 } from 'react-router-dom';
@@ -14,9 +14,26 @@ import CVContent from 'src/components/CVContent';
 import FrenchConnexionContent from 'src/components/FrenchConnexionContent';
 import ProjetPortfolioContent from 'src/components/ProjetPortfolioContent';
 import ProjetLabContent from 'src/components/ProjetLabContent';
+import ContactPage from 'src/components/ContactPage';
+
+
+
 
 // == Composant
-const App = () => (
+const App = () => {
+  // on utilise le hook useLocation fourni par react-router-dom
+  // pour récupérer les information concernant la location (l'url) courante
+  const location = useLocation();
+
+  // on applique un effet de scroll de la fenêtre du navigateur vers les coordonnées (0,0)
+  // au montage du composant App et quand location change
+  useEffect(
+    () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    },
+    [location],
+  );
+  return(
   <div className="app">
     <Nav />
     <Switch>
@@ -39,11 +56,14 @@ const App = () => (
       <Route path="/portfolio/lab" exact>
         <ProjetLabContent />
       </Route>
+      <Route path="/contact" exact>
+        <ContactPage />
+      </Route>
     </Switch>
 
    
   </div>
 );
-
+  }
 // == Export
 export default App;

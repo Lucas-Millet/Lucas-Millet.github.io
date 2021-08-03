@@ -1,0 +1,58 @@
+@use 'src/styles/_vars';
+
+.contactPage{
+  &__field{
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    width: 90%;
+    font-family: vars.$font-text;
+  }
+
+  &__field::placeholder {
+
+    font-family: vars.$font-text;
+  }
+
+  &__Header{
+    font-size: 2em;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    -webkit-text-decoration-line: overline;
+    text-decoration-line: overline;
+    font-family: vars.$font-title;
+  }
+
+  &__Submit{
+    text-decoration: none;
+    border: solid;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5em;
+    width: 80%;
+    font-size: 1.5em;
+    margin: 2em auto;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+
+  }
+
+  &__RS{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+
+    a img{
+      height: 3em;
+      width: 3em;
+    }
+  }
+}
+
