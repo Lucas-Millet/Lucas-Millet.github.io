@@ -1,0 +1,55 @@
+@use 'src/styles/_vars';
+
+.ProjetPortfolioDetailed{
+
+  padding: 1.5em;
+  padding-top: 0;
+
+  &__h2{
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-family: vars.$font-title;
+
+  }
+
+  &__p{
+    margin-bottom: 1em;
+    padding-left: 1em;
+    line-height: 1.35em;
+    font-family: vars.$font-text;
+  }
+
+  &__img{
+    width: 100%;
+
+  }
+
+  &__link{
+    text-align: center;
+    display: block;
+    font-style: italic;
+    font-family: vars.$font-text;
+    text-decoration: underline;
+  }
+
+  &__span{
+    display: block;
+  }
+}
+
+figcaption{
+  font-style: italic;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #585858;
+  font-family: vars.$font-text;
+  font-weight: 300;
+  text-decoration: underline;
+}
+hr{
+  margin-bottom: 2em;
+  margin-top: 2em;
+}

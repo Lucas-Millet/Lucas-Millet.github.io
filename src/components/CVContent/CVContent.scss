@@ -3,6 +3,17 @@
 .cvContent{
   height: 90%;
 
+  &__H1{
+    font-size: 2em;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    -webkit-text-decoration-line: overline;
+    text-decoration-line: overline;
+    font-family: vars.$font-title;
+  }
+
   &__picture{
     background-image: url("src/assets/picture/desespere.jpg");
     height: 50%;
@@ -26,23 +37,42 @@
   &__Block{
     width: 90%;
     margin: auto;
-    background-color: antiquewhite;
     padding: 1em;
     margin-top: 3em;
+    font-family: vars.$font-text;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    a{
+    display: block;
+    font-family: vars.$font-text;
+    color: #000;
+    text-decoration: underline;
+    font-style: italic;
+    display: inline-block;
+    }
   }
 }
 
 
 h2{
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-bottom: 1em;
+  font-family: vars.$font-title;
 }
 
 #DlCV{
-  display: block;
-  margin: 1em auto;
-  width: 100%;
+  text-decoration: none;
+  border: solid;
+  height: 2.5em;
   text-align: center;
-  padding-bottom: 1em;
+  line-height: 2.1em;
+  width: 80%;
   font-size: 1.5em;
+  margin: 2em auto;
+  background-color: #000;
+  color: #fff;
+
+  display: block;
+  font-family: vars.$font-title;
 }

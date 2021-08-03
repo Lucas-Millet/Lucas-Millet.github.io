@@ -3,7 +3,8 @@ export default [
     id: 1,
     name: 'French Connexion',
     stack: 'React, Redux, Symfony, Mysql',
-    url: 'french_connexion'
+    url: 'french_connexion',
+
   },
   {
     id: 2,

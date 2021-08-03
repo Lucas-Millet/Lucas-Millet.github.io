@@ -8,10 +8,12 @@ import './styles.scss';
 
 // == Import Component
 import Nav from 'src/components/Nav';
-import Menu from 'src/components/Menu';
 import HomePageContent from 'src/components/HomePageContent';
 import PortfolioContent from 'src/components/PortfolioContent';
 import CVContent from 'src/components/CVContent';
+import FrenchConnexionContent from 'src/components/FrenchConnexionContent';
+import ProjetPortfolioContent from 'src/components/ProjetPortfolioContent';
+import ProjetLabContent from 'src/components/ProjetLabContent';
 
 // == Composant
 const App = () => (
@@ -22,14 +24,20 @@ const App = () => (
         <HomePageContent />
         
       </Route>
-      <Route path="/mon-CV" exact>
+      <Route path="/qui-suis-je" exact>
         <CVContent />
       </Route>
       <Route path="/portfolio" exact>
         <PortfolioContent />
       </Route>
-      <Route path="/portfolio/:name">
-        <h1>Un projet</h1>
+      <Route path="/portfolio/french_connexion" exact>
+        <FrenchConnexionContent />
+      </Route>
+      <Route path="/portfolio/portfolio" exact>
+        <ProjetPortfolioContent />
+      </Route>
+      <Route path="/portfolio/lab" exact>
+        <ProjetLabContent />
       </Route>
     </Switch>
 

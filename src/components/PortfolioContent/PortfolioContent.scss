@@ -7,70 +7,100 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  &__Background{
-    background-image: url("src/assets/picture/background.png");
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
+
+  &__Header{
+    font-size: 2em;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-line: overline;
+    font-family: vars.$font-title;
   }
 
   &__Projet{
-   // background-color: blanchedalmond;
-    z-index: 150;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: auto;
   }
 
   &__ProjetText{
-    width: 50%;
-   // background-color: brown;
+    width: 100%;
+    background-color: hsla(0, 5%, 72%, 0.205);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 1em;
+  }
+
+  &__Title{
+    font-family: vars.$font-title;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.5em;
+    padding-bottom: 1em;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+  }
+
+  &__Stack{
+    font-family: vars.$font-text;
+    font-weight: 300;
+    font-size: 1.10em;
+    text-align: center;
+    padding-top: 1em;
+
+    span{
+      display: block;
+      margin-top: 0.5em;
+    }
   }
 
   &__ProjetImg {
     z-index: 2;
-    padding-right: 1em;
+    //padding-right: 1em;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+   
   }
 
   &__ProjetImg__img  {
     max-width: 100%;
   }
-  &__FrenchConnexion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-   
-  }
 }
 
-p:first-child{
-  font-size: 1.25em;
-  margin-bottom: 1em;
-  font-weight: bold;
-}
+
 
 span{
   display: inline-block;
   font-style: italic;
   
 }
-#Arianne{
-  font-style: italic;
-  padding: 1em;
-  text-decoration: underline;
+
+#frenchCo{
+ // background-image: url("src/assets/picture/frenchCo.png");
+}
+
+#portfolio{
+  //background-image: url("src/assets/picture/logo.png");
+  
+}
+
+#lab{
+  //background-image: url("src/assets/picture/randomProject.jpg");
+  
+}
+
+#frenchCo,#portfolio,#lab{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 30vh;
 }
