@@ -6,10 +6,12 @@ import React, { useState } from 'react';
 // == Import
 
 import './FrenchConnexionDetailed.scss';
-import PuD from 'src/assets/picture/PuD.png';
-import PuM from 'src/assets/picture/PuM.png';
-import wireframes from 'src/assets/picture/wireframes.png';
-
+import PuD from 'src/assets/picture/pud.svg';
+import PuM from 'src/assets/picture/pum.svg';
+import nicolas from 'src/assets/picture/personna.svg';
+import aurelie from 'src/assets/picture/personna2.svg';
+import samuel from 'src/assets/picture/personna3.svg';
+import NextProjectButton from 'src/components/NextProjectButton';
 
 
 // == Composant
@@ -23,9 +25,11 @@ const FrenchConnexionDetailed  = () => {
       <figcaption>Parcours utilisateur Desktop</figcaption>
       <img src={PuM} alt="Parcours utilisateur mobile" className="frenchConnexionDetailed__img"/>
       <figcaption>Parcours utilisateur Mobile</figcaption>
-      <img src={wireframes} alt="Wireframes" className="frenchConnexionDetailed__img"/>
-      <figcaption>Wireframes</figcaption>
-      
+      <img src={nicolas} alt="Wireframes" className="frenchConnexionDetailed__img"/>
+      <img src={aurelie} alt="Wireframes" className="frenchConnexionDetailed__img"/>
+      <img src={samuel} alt="Wireframes" className="frenchConnexionDetailed__img"/>
+      <figcaption>Personna</figcaption>
+      <NextProjectButton  value="portfolio"/>
     </div>
  
   )

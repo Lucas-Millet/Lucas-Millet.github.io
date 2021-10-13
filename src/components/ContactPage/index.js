@@ -6,8 +6,8 @@ import { send } from 'emailjs-com';
 // == Import
 
 import './ContactPage.scss';
-import Linkedin from 'src/assets/picture/linkedin.png';
-import Github from 'src/assets/picture/github.png';
+import Linkedin from 'src/assets/picture/link.png';
+import Github from 'src/assets/picture/githubLogo.svg';
 
 
 // == Composant
@@ -49,6 +49,7 @@ const ContactPage  = () => {
   return(
     <div className="contactPage">
     <h1 className="contactPage__Header">Faites-moi signe</h1>
+    <p>Utilisez ce formulaire pour m'envoyer un message. Vous pouvez également me joindre à cette adresse : lucamillet@gmail.com</p>
     <form onSubmit={onSubmit}>
     <input 
         className="contactPage__field"

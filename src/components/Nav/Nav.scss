@@ -11,23 +11,23 @@
   position: relative;
   top: 0;
   z-index: 151;
+ 
+  @media only screen and (min-width : 768px) {
+    
+    width: 80%;
+    background-color: unset;
+    margin: auto;
+    //border: dotted black;
+    margin-top: 0.5em;
+
+}
 
   
   &__logo img{
     width: 3.5em;
   }
 
-  &__nav{
-    text-transform: uppercase;
-    width: 20%;
-    height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: vars.$font_title;
-    font-variant: small-caps;
-    text-decoration: underline;
-  }
+ 
 
   &__listLink{
     width: 100%;
@@ -37,9 +37,33 @@
     align-items: center;
     justify-content: space-evenly;
     font-size: 1em;
+
+    @media only screen and (min-width : 768px) {
+    
+
+      justify-content: flex-end;
+
+  
+  }
+  }
+
+  &__link{
+    @media only screen and (min-width : 768px) {
+    color: black;
+    margin-right: 3em;
+    font-size: 1.5em;
+    font-family: vars.$font-title;
+    text-transform: uppercase;
+    font-size: 2em;
+  }
   }
 
   &__link:hover{
+    text-decoration: underline;
+  }
+
+  a.nav__link.active {
+    color: #ff5267;
     text-decoration: underline;
   }
 

@@ -1,7 +1,21 @@
 @use 'src/styles/_vars';
 
 .HeaderProject{
+  @media only screen and (min-width : 768px) {
+    width: 60%;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
 
+    img{
+      display: none;
+    }
+    
+
+  }
 
   &__img{
     width: 100%;
@@ -20,11 +34,16 @@
 
   &__h2{
     font-size: 1.25em;
-    width: 100%;
+    width: fit-content;
     text-align: center;
+    margin: auto;
     font-style: italic;
     font-family: vars.$font-text;
     padding: 1em;
+    background-color: #ff5267;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
   }
 }
 

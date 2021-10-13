@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 // == Import
-import logo from 'src/assets/picture/logo.png';
+import logo from 'src/assets/picture/logosite.svg';
 import './Nav.scss';
 
 // == Composant

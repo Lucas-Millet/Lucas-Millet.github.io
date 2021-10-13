@@ -1,12 +1,40 @@
 @use 'src/styles/_vars';
 
 .contactPage{
+
+  @media only screen and (min-width : 768px) {
+    
+    width: 40%;
+    margin: auto;
+
+    p{
+      width: 90%;
+      margin: auto;
+    }
+
+}
+
+  form {
+    @media only screen and (min-width : 768px) {
+    
+     // width: 90%;
+      margin: auto;
+  
+  }
+  }
   &__field{
     display: block;
     margin: 1em auto;
     padding: 1em;
     width: 90%;
     font-family: vars.$font-text;
+
+    @media only screen and (min-width : 768px) {
+    
+     // width: 40%;
+  
+  }
+
   }
 
   &__field::placeholder {
@@ -23,21 +51,38 @@
     -webkit-text-decoration-line: overline;
     text-decoration-line: overline;
     font-family: vars.$font-title;
+
+    @media only screen and (min-width : 768px) {
+    
+      //padding: 2em 0.5em 0.5em;
+     // width: 90%;
+      margin: auto;
+  
+  }
   }
 
   &__Submit{
-    text-decoration: none;
-    border: solid;
-    height: 2.5em;
+    font-size: 1.25em;
+    width: 15em;
     text-align: center;
-    line-height: 2.5em;
-    width: 80%;
-    font-size: 1.5em;
-    margin: 2em auto;
-    background-color: #000;
-    color: #fff;
+    margin: 1em auto;
+    font-style: italic;
+    padding: 1em;
+    background-color: #ff5267;
+    border-radius: 20px;
+    border: none;
     text-transform: uppercase;
+    color: #fff;
+    font-family: vars.$font-title;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     display: block;
+
+    @media only screen and (min-width : 768px) {
+    
+    //  width: 40%;
+      
+
+  }
 
   }
 
@@ -49,9 +94,21 @@
     width: 70%;
     margin: auto;
 
+    @media only screen and (min-width : 768px) {
+    
+   //   justify-content: flex-end;
+
+  }
+
     a img{
       height: 3em;
       width: 3em;
+
+      @media only screen and (min-width : 768px) {
+    
+        margin-right: 2em;
+  
+    }
     }
   }
 }

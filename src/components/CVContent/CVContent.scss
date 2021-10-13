@@ -3,6 +3,89 @@
 .cvContent{
   height: 90%;
 
+  span{
+   display: inline-block;
+  }
+
+  @media only screen and (min-width : 768px) {
+    
+    width: 80%;
+    margin: auto;
+
+    @media only screen and (min-width : 768px) {
+      width: 60%;
+      margin: auto;
+    
+  
+    &__Color{
+      background-color: #40474c;
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      z-index: 1;
+    }
+  
+    &__Intro{
+      background-color: #fff;
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      height: 20%;
+      z-index: 2;
+      padding: 1em;
+      box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+      text-align: justify;
+      line-height: 1.25em;
+      font-size: 1em;
+      font-family: vars.$font-text;
+      display: flex;
+      align-items: center;
+    }
+  
+    &__Title{
+     
+      font-family: vars.$font-title;
+      color:white;
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+      top: 20%;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      left: 30%;
+      width: 40%;
+    }
+
+    &__Content{
+      position: absolute;
+      top: 55%;
+      left: 30%;
+      width: 40%;
+      //border:solid black;
+      height: fit-content;
+    }
+
+    &__Photo{
+      border-radius: 50%;
+      width: 15em;
+      margin: 1em auto;
+      display: block;
+    }
+
+    &__Gif{
+      width: 20em;
+      margin: 1em auto 0;
+      display: block;
+    }
+  
+  }
+
+}
+
   &__H1{
     font-size: 2em;
     padding: 1em;
@@ -12,6 +95,14 @@
     -webkit-text-decoration-line: overline;
     text-decoration-line: overline;
     font-family: vars.$font-title;
+
+    @media only screen and (min-width : 768px) {
+    
+      padding: 2em 0.5em 0.5em;
+      width: 90%;
+      margin: auto;
+  
+  }
   }
 
   &__picture{
@@ -24,24 +115,24 @@
     position: relative;
   }
 
-  &__encart{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    opacity: 0.7;
-    padding: 0.5em;
-  }
+ 
 
   &__Block{
-    width: 90%;
+  //  width: 90%;
     margin: auto;
     padding: 1em;
     margin-top: 3em;
     font-family: vars.$font-text;
     font-size: 1em;
     line-height: 1.5em;
+
+    @media only screen and (min-width : 768px) {
+    
+      
+     // width: 80%;
+     // margin: auto;
+  
+  }
 
     a{
     display: block;
@@ -51,6 +142,16 @@
     font-style: italic;
     display: inline-block;
     }
+
+    p{
+      @media only screen and (min-width : 768px) {
+       // width: 80%;
+    }
+    }
+  }
+
+  &__Block:first-child{
+    margin-top: 0;
   }
 }
 
@@ -62,17 +163,23 @@ h2{
 }
 
 #DlCV{
-  text-decoration: none;
-  border: solid;
-  height: 2.5em;
-  text-align: center;
-  line-height: 2.1em;
-  width: 80%;
-  font-size: 1.5em;
-  margin: 2em auto;
-  background-color: #000;
-  color: #fff;
-
   display: block;
+  font-size: 1.25em;
+  width: 15em;
+  text-align: center;
+  margin: 1em auto;
+  font-style: italic;
+  padding: 1em;
+  background-color: #ff5267;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
   font-family: vars.$font-title;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+  @media only screen and (min-width : 768px) {
+   // width: 40%;
+   // margin: 2em 10%;
+}
 }

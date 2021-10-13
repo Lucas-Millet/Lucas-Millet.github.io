@@ -3,7 +3,14 @@
 .ProjetPortfolioDetailed{
 
   padding: 1.5em;
-  padding-top: 0;
+  position: absolute;
+  top: 60%;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__h2{
     font-size: 1.15em;
@@ -16,6 +23,7 @@
   &__p{
     margin-bottom: 1em;
     padding-left: 1em;
+    text-align: justify;
     line-height: 1.35em;
     font-family: vars.$font-text;
   }
@@ -25,16 +33,16 @@
 
   }
 
+  #smaller{
+    width: fit-content;
+  }
+
   &__link{
     text-align: center;
     display: block;
     font-style: italic;
     font-family: vars.$font-text;
     text-decoration: underline;
-  }
-
-  &__span{
-    display: block;
   }
 }
 
@@ -53,3 +61,7 @@ hr{
   margin-bottom: 2em;
   margin-top: 2em;
 }
+span{
+  display: block;
+}
+
