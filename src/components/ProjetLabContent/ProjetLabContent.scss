@@ -1,6 +1,27 @@
 @use 'src/styles/_vars';
 
 .projetLabContent{
+  margin-bottom: 6em;
+
+  &__Title{
+   
+    text-align: center;
+    font-size: 2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    width: 80%;
+    margin: 1em auto .5em;
+    font-family: vars.$font-title;
+
+  }
+
+  &__Intro{
+    
+   display: none;
+   
+  }
+
+
   @media only screen and (min-width : 768px) {
     width: 60%;
     margin: auto;

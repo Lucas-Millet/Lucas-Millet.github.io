@@ -19,7 +19,7 @@ const ProjetPortfolioContent  = () => {
        <div className="projetPortfolioContent__Color"></div>
       <div className="projetPortfolioContent__Title">Portfolio</div>
       <div className="projetPortfolioContent__Intro">Mes études sont terminées, il est temps d'avoir une présence sur le web. Ce site n'est et ne sera jamais fini. Je ferais des mises à jours régulières et partagerait mes projets dans mon labo</div>
-      <HeaderProject nom={"Portfolio"} stack={"React"} image={Port} />
+      <HeaderProject nom={"Portfolio"} stack={"React"} image={Port} mission="Mes études sont terminées, il est temps d'avoir une présence sur le web. Ce site n'est et ne sera jamais fini. Je ferais des mises à jours régulières et partagerait mes projets dans mon labo" />
 
       <ProjetPortfolioDetailed />
 

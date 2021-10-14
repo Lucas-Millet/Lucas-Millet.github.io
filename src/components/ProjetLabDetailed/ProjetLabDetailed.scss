@@ -2,15 +2,8 @@
 
 .ProjetLabDetailed{
 
+  position: relative;
   padding: 1.5em;
-  position: absolute;
-  top: 60%;
-  width: 60%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &__h2{
     font-size: 1.15em;
@@ -33,10 +26,6 @@
 
   }
 
-  #smaller{
-    width: fit-content;
-  }
-
   &__link{
     text-align: center;
     display: block;
@@ -44,23 +33,32 @@
     font-family: vars.$font-text;
     text-decoration: underline;
   }
-}
+  
+  figcaption{
+    font-style: italic;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #585858;
+    font-family: vars.$font-text;
+    font-weight: 300;
+    text-decoration: underline;
+  }
 
-figcaption{
-  font-style: italic;
-  font-size: 1em;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 1.5em;
-  color: #585858;
-  font-family: vars.$font-text;
-  font-weight: 300;
-  text-decoration: underline;
-}
-hr{
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-span{
-  display: block;
-}
+  hr{
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  @media only screen and (min-width : 768px) {
+   
+    position: absolute;
+    top: 60%;
+    width: 60%;
+    height: fit-content;
+  
+  
+  }
+  }
+ 

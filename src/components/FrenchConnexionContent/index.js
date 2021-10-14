@@ -18,7 +18,7 @@ const FrenchConnexionContent  = () => {
       <div className="frenchConnexionContent__Color"></div>
       <div className="frenchConnexionContent__Title">French Connexion</div>
       <div className="frenchConnexionContent__Intro">Projet de fin de formation au d’Oclock, nous avions pour mission de réaliser un site sur une durée de trois semaines. Nous avons choisi la dynamique du voyage et avons crée French Connexion, le premier site de mise en relation de français metropolitains avec des étrangers francophones.</div>
-      <HeaderProject nom={""} stack={"React, Redux, Symfony, Mysql"} image={FC}  />
+      <HeaderProject nom={""} stack={"React, Redux, Symfony, Mysql"} image={FC} mission="Projet de fin de formation au d’Oclock, nous avions pour mission de réaliser un site sur une durée de trois semaines. Nous avons choisi la dynamique du voyage et avons crée French Connexion, le premier site de mise en relation de français metropolitains avec des étrangers francophones."  />
       <FrenchConnexionDetailed />
     
     </div>

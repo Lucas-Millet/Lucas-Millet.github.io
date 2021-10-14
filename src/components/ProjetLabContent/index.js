@@ -20,7 +20,7 @@ const ProjetLabContent  = () => {
       <div className="projetLabContent__Color"></div>
       <div className="projetLabContent__Title">Labo</div>
       <div className="projetLabContent__Intro">Je vous partage ici mes expériences et mes projets personnels. J'aime explorer et essayer de nouvelles choses : technos, librairies...</div>
-      <HeaderProject nom={"Labo"} stack={"React, Redux, Vues, PHP, Symfony, HTML, CSS"} image={Project} />
+      <HeaderProject nom={"Labo"} stack={"React, Redux, Vues, PHP, Symfony, HTML, CSS"} image={Project} mission="Je vous partage ici mes expériences et mes projets personnels. J'aime explorer et essayer de nouvelles choses : technos, librairies..."/>
 
       <ProjetLabDetailed />
 
