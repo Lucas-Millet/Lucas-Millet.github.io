@@ -27,7 +27,7 @@ const HomePageText = () => {
         <div id="name">Lucas MILLET</div>
         <p id="jobMobile">Développeur FRONT-END junior</p>
         <div className="homePageText__info">
-        <p id="introduction">Je développe des applications en <span className="bold">reactJS</span> et <span className="bold">vueJS</span>. J'emmène mes notions en <span className="bold">UX Design</span> au sein de mes projets. </p>
+        <p id="introduction">Je développe des applications en <span className="bold">reactJS</span> et <span className="bold">JavaScript</span>. J'emmène mes notions en <span className="bold">UX Design</span> au sein de mes projets. </p>
         <Link to="/portfolio" className="myProject">Découvrez mes projets</Link>
         </div>
        </div>
