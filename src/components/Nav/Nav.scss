@@ -55,13 +55,15 @@
 
     font-family: vars.$font-title;
     text-transform: uppercase;
-    border: solid black;
-    padding: 1em 0.5em;
+    // border: solid black;
+    padding: 0.5em;
     width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #EEF5F2;
+    border-radius: 6px;
 
     @media only screen and (min-width : 768px) {
     color: black;
@@ -70,6 +72,9 @@
     font-size: 2em;
     width: unset;
     border: none;
+    padding: none;
+    background:none;
+    border-radius: 0;
   }
   }
 
@@ -86,6 +91,16 @@
     color: #ff5267;
    }
 
+
+   .icon{
+    width: 2em;
+    height: 2em;
+   
+
+    @media only screen and (min-width : 768px) {
+      display: none;
+    }
+  }
 
   #logo img{
     width: 3.5em;
