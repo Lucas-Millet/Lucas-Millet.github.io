@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import './CVContent.scss';
 import photo from 'src/assets/picture/Lucas_Autre_Photo.jpg';
 import gifCarrey from 'src/assets/picture/ilikeit.gif';
-import CV from 'src/assets/CV/CV_Lucas.png';
+import CV from 'src/assets/CV/CV.png';
 
 
 // == Composant
