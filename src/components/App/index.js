@@ -1,5 +1,5 @@
 // == Import npm
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Route, Switch, useLocation, useHistory,
 } from 'react-router-dom';
@@ -15,6 +15,7 @@ import FrenchConnexionContent from 'src/components/FrenchConnexionContent';
 import ProjetPortfolioContent from 'src/components/ProjetPortfolioContent';
 import ProjetLabContent from 'src/components/ProjetLabContent';
 import ContactPage from 'src/components/ContactPage';
+import Loader from 'src/components/Loader';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
   // on utilise le hook useLocation fourni par react-router-dom
   // pour récupérer les information concernant la location (l'url) courante
   const location = useLocation();
+  const [loading,setLoading] = useState(true);
 
   // on applique un effet de scroll de la fenêtre du navigateur vers les coordonnées (0,0)
   // au montage du composant App et quand location change
@@ -33,7 +35,22 @@ const App = () => {
     },
     [location],
   );
-  return(
+
+  useEffect(
+    () => {
+      setTimeout(() => {
+        setLoading(false);
+      },3000);
+     
+    },
+    [],
+  );
+
+  return loading ? (
+    <Loader />
+  )
+  :
+  (
   <div className="app">
     <Nav />
     <Switch>

@@ -21,13 +21,13 @@ const FrenchConnexionDetailed  = () => {
      
       <a href="http://frenchco.surge.sh/" target="_blank" className="frenchConnexionDetailed__link">Lien vers le site</a>
       <hr></hr>
-      <img src={PuD} alt="Parcours utilisateur desktop" className="frenchConnexionDetailed__img"/>
+      <img src={PuD} alt="Parcours utilisateur desktop" className="frenchConnexionDetailed__img" loading="eager"/>
       <figcaption>Parcours utilisateur Desktop</figcaption>
-      <img src={PuM} alt="Parcours utilisateur mobile" className="frenchConnexionDetailed__img"/>
+      <img src={PuM} alt="Parcours utilisateur mobile" className="frenchConnexionDetailed__img" loading="eager"/>
       <figcaption>Parcours utilisateur Mobile</figcaption>
-      <img src={nicolas} alt="Wireframes" className="frenchConnexionDetailed__img"/>
-      <img src={aurelie} alt="Wireframes" className="frenchConnexionDetailed__img"/>
-      <img src={samuel} alt="Wireframes" className="frenchConnexionDetailed__img"/>
+      <img src={nicolas} alt="Personna" className="frenchConnexionDetailed__img" loading="lazy"/>
+      <img src={aurelie} alt="Personna" className="frenchConnexionDetailed__img" loading="lazy"/>
+      <img src={samuel} alt="Personna" className="frenchConnexionDetailed__img" loading="lazy"/>
       <figcaption>Personna</figcaption>
       <NextProjectButton  value="portfolio"/>
     </div>

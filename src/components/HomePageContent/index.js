@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 import './HomePageContent.scss';
 import HomePageText from 'src/components/HomePageText';
+
 // == Composant
 const HomePageContent = () => { 
   
