@@ -15,7 +15,7 @@ import FrenchConnexionContent from 'src/components/FrenchConnexionContent';
 import ProjetPortfolioContent from 'src/components/ProjetPortfolioContent';
 import ProjetLabContent from 'src/components/ProjetLabContent';
 import ContactPage from 'src/components/ContactPage';
-import Loader from 'src/components/Loader';
+
 
 
 
@@ -36,21 +36,9 @@ const App = () => {
     [location],
   );
 
-  useEffect(
-    () => {
-      setTimeout(() => {
-        setLoading(false);
-      },3000);
-     
-    },
-    [],
-  );
 
-  return loading ? (
-    <Loader />
-  )
-  :
-  (
+
+  return (
   <div className="app">
     <Nav />
     <Switch>
